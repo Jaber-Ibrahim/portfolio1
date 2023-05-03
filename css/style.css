@@ -82,7 +82,7 @@ nav .navbar-collapse ul li:hover a {
 }
 /* Start Landing */
 .landing {
-    height: 100vh;
+    min-height: 75vh;
 }
 .landing .my-image {
     height: 100%;

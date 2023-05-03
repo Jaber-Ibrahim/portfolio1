@@ -6,12 +6,12 @@ let lists = document.querySelectorAll("nav .nav-item .nav-link");
 // localStorage.clear();
 
 window.onscroll = function () {
-    let current = "";
+    let current;
     sections.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop;
     
-    if (top >= offset - 72) {
+    if (top >= offset - 100) {
       current = sec.getAttribute("id");
     }
     lists.forEach((a) => {
@@ -22,7 +22,7 @@ window.onscroll = function () {
     });
   });
 
-  if (scrollY > 100) {
+  if (scrollY > 50) {
     // mynav.classList.remove("bg-transparent");
     mynav.classList.add("bg-white");
     mynav.style.height = "80px";
