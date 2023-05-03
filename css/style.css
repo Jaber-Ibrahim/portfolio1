@@ -82,14 +82,24 @@ nav .navbar-collapse ul li:hover a {
 }
 /* Start Landing */
 .landing {
-    min-height: 75vh;
+    min-height: 100vh;
 }
 .landing .my-image {
-    height: 100%;
+    min-width: 300px;
+    aspect-ratio: 3/2;
 }
 .landing .info {
-    top: 200px;
+    top: 10rem;
     left: 10%;
+}
+@media(max-width:575px) {
+    .landing .info {
+        position: relative !important; 
+        top: 3rem;
+        left: 0;
+        text-align: center;
+        width: fit-content;
+    }
 }
 /* End Landing */
 /*Start Services  */
