@@ -89,16 +89,17 @@ nav .navbar-collapse ul li:hover a {
     aspect-ratio: 3/2;
 }
 .landing .info {
-    top: 10rem;
+    top: 20rem;
     left: 10%;
 }
-@media(max-width:575px) {
+@media(max-width:764px) {
     .landing .info {
         position: relative !important; 
         top: 3rem;
         left: 0;
         text-align: center;
         width: fit-content;
+        margin: 0 auto;
     }
 }
 /* End Landing */
